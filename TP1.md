@@ -41,4 +41,13 @@
 Exemple : *file plop* --> *plop: ASCII text*
 Exemple2 : *file initrd.img* --> *initrd.img: symbolic link to boot/initrd.img-5.3.0-29-generic*
 11. Après modification de toto, on remarque que titi à lui aussi fait la modification du texte. En supprimant toto, le lien symbolique entre toto et titi est supprimer mais le fichier titi est toujours existant
-12. 
+12. Après création du lien symbolique avec la commande *ln -s titi tutu*, si l'on modifie le fichier *titi*, le fichier *tutu* est modifier aussi. Si le fichier *tutu* est modifié, *titi* est modifier lui aussi. Si *titi* est supprimer, le lien symbolique est brisé et le fichier *tutu* est donc présent mais corrompu. En utilisant la commande *file* on peut voir l'affichage suivant : 
+   *file tutu --> tutu: broken symbolic link to titi*
+13. *cat /var/log/syslog*. Le raccourci clavier *Ctrl-S* permet d'interrompre le défilement à l'écran. Pour reprendre le défilement, il faut utiliser le raccourci *Ctrl-Q*
+14. *head -n 5 /var/log/syslog* ==> affiche les 5 premieres lignes du fichier syslog
+   *tail -n 15 /var/log/syslog* ==> affiche les 15 dernières lignes du fichier syslog
+   *head -n 20 /var/log/syslog | tail -n 10* ==> affiche les lignes 10 à 20 du fichier syslog
+15. *dmesg | less* ==> *dmesg* est une commande de contrôle du noyau permettant de voir en détails son état. la commande *less* à la suite du résultat de la commande dmesg permet un affichage contrôler en affichant le début et en défilant avec la souris jusqu'à la fin. On peut aussi appuyer sur la barre espace afin de sauter à la suite non visible du texte. Enfin, on peut appuyer sur entrée pour sauter ligne par ligne le texte
+16. *cat /etc/passwd* ==> affiche le fichier passwd contenant les login, droits de lecture et écriture sur les chemin détaillés etc. La commande manuel de ce fichier est *man passwd*
+17. *sort -k1r /etc/passwd* ==> permet de trier le fichier par rapport au tri décroissant de la 1ère colonne
+18. 

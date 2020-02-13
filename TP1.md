@@ -34,4 +34,11 @@
 4. Il n'existe pas d'entrée de manuel pour la commande *ll*. Cette commande est un raccourci de la commande *ls -alF*.
 5. *ls /bin* ==> affiche tous les fichiers dans le dossier /bin
 6. *ls ..* ==> permet d'afficher les fichiers et dossier présent dans le dossier parent par rapport au répertoire courant
-7. 
+7. *pwd* ==> permet de donner le chemin complet du dossier courant
+8. *echo 'yo' > plop* ==> écrit le mot 'yo' dans un fichier nommé plop. Si la commande est entrée une 2ème fois, aucun autre fichier est créer, il écrase donc le fichier précédent avec la nouvelle expression
+9. *echo 'yo' >> plop* ==> écrit la même expression sur la deuxieme ligne du fichier plop
+10. La commande *file "nom fichier ou dossier"* permet d'afficher le type de fichier demandé. 
+Exemple : *file plop* --> *plop: ASCII text*
+Exemple2 : *file initrd.img* --> *initrd.img: symbolic link to boot/initrd.img-5.3.0-29-generic*
+11. Après modification de toto, on remarque que titi à lui aussi fait la modification du texte. En supprimant toto, le lien symbolique entre toto et titi est supprimer mais le fichier titi est toujours existant
+12. 

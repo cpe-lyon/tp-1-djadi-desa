@@ -8,4 +8,23 @@
 2. Pour chercher un terme, il faut taper : /"expression" puis entrée. L'expression demandé va alors apparaitre en surligné blanc
 3. Pour quitter le manuel, taper sur "q"
 4. la commande est *man 6 which*. La section 6 est la section "jeux" du manuel
-5. 
+
+### Navigation dans l'arborescence des fichiers
+
+1. *cd /var/log*
+2. *cd ..*
+3. *cd ~*
+4. *cd -*
+5. *cd /root* ==> La permission est non accordée
+6. *sudo cd /root* ==> commande ne fonctione pas. Faire d'abord un *sudo su* puis un *cd /root* pour accéder au dossier /root
+7. *mkdir dossier1 dossier2*
+    *touch dossier1/fichier1*
+    *mkdir dossier2/dossier2.1 dossier2/dossier2.2*
+    *touch dossier2/dossier2.2/fichier2 dossier2/dossier2.2/fichier3*
+8. rm permet de supprimer un fichier mais il ne supprime pas un dossier. 
+9. Pour supprimer un dossier, il faut utiliser l'option -r soit la commande *rm -d dossier*
+10. Il ne peut pas supprimer dossier2 avec cette commande car il est rempli de dossier et fichiers
+11. *rm -r dossier2*
+
+### Commandes importantes
+1. 

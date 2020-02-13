@@ -27,4 +27,11 @@
 11. *rm -r dossier2*
 
 ### Commandes importantes
-1. 
+
+1. *date* permet d'afficher l'heure + date d'aujourd'hui. La commande *time* permet de calculer le temps que mettra un processus (exemple commande *wget* télécharge via un lien https)
+2. Les fichiers commençant par un point sont des fichiers cachés dans le dossier
+3. *which ls* ==> se situe dans /usr/bin/ls
+4. Il n'existe pas d'entrée de manuel pour la commande *ll*. Cette commande est un raccourci de la commande *ls -alF*.
+5. *ls /bin* ==> affiche tous les fichiers dans le dossier /bin
+6. *ls ..* ==> permet d'afficher les fichiers et dossier présent dans le dossier parent par rapport au répertoire courant
+7. 
